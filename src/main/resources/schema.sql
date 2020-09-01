@@ -24,7 +24,7 @@ CREATE TABLE Member (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 DROP TABLE IF EXISTS Department;
-CREATE TABLE Member (
+CREATE TABLE department (
   dep_Id int(11) NOT NULL AUTO_INCREMENT,
   dep_Code varchar(30) NOT NULL,
   dep_Name varchar(30) NOT NULL,
@@ -33,4 +33,5 @@ CREATE TABLE Member (
   create_At TIMESTAMP,
   update_By varchar(30),
   update_At TIMESTAMP,
+  PRIMARY KEY (dep_Id)
 )
